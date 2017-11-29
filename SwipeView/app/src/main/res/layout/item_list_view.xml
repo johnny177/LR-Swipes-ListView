@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light">
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:padding="16dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="@android:color/holo_orange_light" />
+
+    <ImageView
+        android:id="@+id/others_imageview"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginLeft="50dp"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_input_add"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/remove_imageview"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/list_item_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/background_light"
+        android:paddingLeft="20dp"
+        android:text="@string/app_name"
+        android:visibility="visible" />
+
+
+</FrameLayout>
