@@ -12,11 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.yydcdut.sdlv.Menu;
-import com.yydcdut.sdlv.MenuItem;
-import com.yydcdut.sdlv.SlideAndDragListView;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     ListViewAdapter listViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mListView = findViewById(R.id.activity_list_view);
 
 
-       listViewAdapter = new ListViewAdapter(this, R.layout.item_list_view);
+        listViewAdapter = new ListViewAdapter(this, R.layout.item_list_view);
 
 
         mListView.setAdapter(listViewAdapter);
@@ -42,17 +38,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    public void resetLists(View v)
-    {
+    public void resetLists(View v) {
 
         mListView.setAdapter(listViewAdapter);
 
 
-
     }
-
-
 
 
 }
