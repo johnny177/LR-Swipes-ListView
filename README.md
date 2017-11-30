@@ -11,6 +11,9 @@ Sample project for listview swipe animations.
 We used FrameLayout as root so that we can acheive overlapping behaviour. 
 See  ![List Item's Layout](https://github.com/talhahasanzia/LR-Swipes-ListView/blob/master/SwipeView/app/src/main/res/layout/item_list_view.xml) for more details.
 
+
+![Demo gif](/Demo/flowRoot141.png?raw=true "Demo")
+
 ## Whre the Magic Happens
 The real code is in onTouch of ListAdapter class. Here is the sneak peek with comments to clarify code.
 ```
