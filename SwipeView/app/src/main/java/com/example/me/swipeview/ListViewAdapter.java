@@ -25,7 +25,6 @@ public class ListViewAdapter extends ArrayAdapter {
     Context context;
 
 
-
     int CURRENT_STATE = 0;
 
     static final int LEFT_OPTIONS_OPENED = 1;
@@ -61,7 +60,6 @@ public class ListViewAdapter extends ArrayAdapter {
 
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_list_view, parent, false);
         }
-
 
 
         final ImageView remove = convertView.findViewById(R.id.remove_imageview);
@@ -110,9 +108,9 @@ public class ListViewAdapter extends ArrayAdapter {
                         view.setX(event.getRawX() + dX);
                         lastAction = MotionEvent.ACTION_MOVE;
                         break;
-                    case MotionEvent.ACTION_CANCEL:
-                    case MotionEvent.ACTION_UP:
 
+                    case MotionEvent.ACTION_CANCEL:
+                    case MotionEvent.ACTION_UP: {
                         if (lastAction == MotionEvent.ACTION_MOVE) {
 
 
@@ -121,7 +119,7 @@ public class ListViewAdapter extends ArrayAdapter {
                                 // Log.d(TAG, "onTouch: swiped right");
 
                                 if (view.getX() > midPoint) {
-                                    Toast.makeText(context, "Some Operation", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(context, "Full Swipe to Right", Toast.LENGTH_SHORT).show();
                                     restore(view);
                                 } else if (CURRENT_STATE == RIGHT_OPTIONS_OPENED) {
                                     restore(view);
@@ -133,7 +131,7 @@ public class ListViewAdapter extends ArrayAdapter {
 
                                 //Log.d(TAG, "onTouch: swiped left");
                                 if (view.getX() * -1 > midPoint) {
-                                    Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(context, "Full Swipe to Left", Toast.LENGTH_SHORT).show();
 
 
                                 } else if (CURRENT_STATE == LEFT_OPTIONS_OPENED) {
@@ -146,7 +144,8 @@ public class ListViewAdapter extends ArrayAdapter {
 
 
                         }
-                        break;
+                    }
+                    break;
 
                 }
 

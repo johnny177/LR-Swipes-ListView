@@ -13,13 +13,7 @@
         android:text="Hello World!"
         android:visibility="visible" />
 
-    <com.yydcdut.sdlv.SlideAndDragListView
-        android:visibility="gone"
-        android:id="@+id/useful_listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </com.yydcdut.sdlv.SlideAndDragListView>
 
     <Button
         android:layout_gravity="bottom"
