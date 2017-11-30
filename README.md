@@ -4,6 +4,15 @@
 # LR-Swipes-ListView
 Sample project for listview swipe animations.
 
+![Demo gif](/Demo/demo.gif?raw=true "Demo")
+
+
+## What's Happening in the Layout
+We used FrameLayout as root so that we can acheive overlapping behaviour. 
+See  ![List Item's Layout](https://github.com/talhahasanzia/LR-Swipes-ListView/blob/master/SwipeView/app/src/main/res/layout/item_list_view.xml) for more details.
+
+## Whre the Magic Happens
+
 
 ## License
 
