@@ -4,7 +4,7 @@
 # LR-Swipes-ListView
 Sample project for listview swipe animations.
 
-![Demo gif](/LR-Swipes-ListView/Demo/demo.gif?raw=true "Demo")
+![Demo gif](/Demo/demo.gif?raw=true "Demo")
 
 
 ## License
