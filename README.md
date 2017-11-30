@@ -6,8 +6,15 @@ Sample project for listview swipe animations.
 
 ![Demo gif](/Demo/demo.gif?raw=true "Demo")
 
+
+
+
+
 ## Motivation
 The need arose when I needed to gain full swipe action on a ListView item. Since ListView has not any predefined gesture like this I thought I would give it a try and write my own code. Which for me fulfils the requirements.
+
+
+
 
 
 ## What's Happening in the Layout
@@ -19,6 +26,9 @@ See  ![List Item's Layout](https://github.com/talhahasanzia/LR-Swipes-ListView/b
 
 
 Layers are marked 1 (bottom) to 3 (top).
+
+
+
 
 ## Where the Magic Happens
 The real code is in onTouch of ![ListAdapter](https://github.com/talhahasanzia/LR-Swipes-ListView/blob/master/SwipeView/app/src/main/java/com/example/me/swipeview/ListViewAdapter.java) class. Here is the sneak peek with comments to clarify code.
@@ -104,6 +114,9 @@ The real code is in onTouch of ![ListAdapter](https://github.com/talhahasanzia/L
             }
         }
 ```
+
+
+
 
 ## License
 
