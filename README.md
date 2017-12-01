@@ -11,7 +11,7 @@ Sample project for listview swipe animations.
 
 
 ## Motivation
-The need arose when I needed to gain full swipe action on a ListView item. Since ListView has not any predefined gesture like this I thought I would give it a try and write my own code. Which for me fulfils the requirements.
+The need arose when I wanted to implement full swipe action on a ListView item. Since ListView has not any predefined gesture like this I thought I would give it a try and write my own code. Which for me fulfils the requirements.
 
 
 
