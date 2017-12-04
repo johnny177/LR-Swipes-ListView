@@ -31,7 +31,7 @@ Layers are marked 1 (bottom) to 3 (top).
 
 
 ## Where the Magic Happens
-The real code is in onTouch of ![ListAdapter](https://github.com/talhahasanzia/LR-Swipes-ListView/blob/master/SwipeView/app/src/main/java/com/example/me/swipeview/ListViewAdapter.java) class. Here is the sneak peek with comments to clarify code.
+The main logic is in onTouch of ![ListAdapter](https://github.com/talhahasanzia/LR-Swipes-ListView/blob/master/SwipeView/app/src/main/java/com/example/me/swipeview/ListViewAdapter.java) class. Here is the sneak peek with comments to clarify code.
 ```
   public boolean onTouch(View view, MotionEvent event) {
 
