@@ -120,7 +120,7 @@ public class ListViewAdapter extends ArrayAdapter {
                         if (lastAction == MotionEvent.ACTION_MOVE) {
 
 
-                          //  Log.d(TAG, "onTouch: X-axis of view: " + view.getX());
+                            //  Log.d(TAG, "onTouch: X-axis of view: " + view.getX());
                             if (view.getX() - startingMove > 0) {  // RIGHT SWIPE
                                 // Log.d(TAG, "onTouch: swiped right");
 
@@ -140,7 +140,7 @@ public class ListViewAdapter extends ArrayAdapter {
                                 //Log.d(TAG, "onTouch: swiped left");
                                 if (view.getX() * -1 > midPoint) { // check if swipe passed mid screen as full swipe
                                     Toast.makeText(context, "Full Swipe to Left", Toast.LENGTH_SHORT).show();
-
+                                    restore(view);
 
                                 } else if (CURRENT_STATE == LEFT_OPTIONS_OPENED) {
                                     // if left options (views) are visible restore the whole view
@@ -150,7 +150,7 @@ public class ListViewAdapter extends ArrayAdapter {
                                 }
                             }
 
-                        // NOTE THAT ONLY ONE SIDE OPTIONS ARE VISIBLE AT ONCE
+                            // NOTE THAT ONLY ONE SIDE OPTIONS ARE VISIBLE AT ONCE
                         }
                     }
                     break;
